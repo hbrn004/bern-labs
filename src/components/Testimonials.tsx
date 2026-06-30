@@ -1,18 +1,25 @@
 "use client";
 
-import { Star } from "lucide-react";
 import ScrollReveal from "./ScrollReveal";
 
 const testimonials = [
   {
-    name: "Nama Klien",
-    role: "Pemilik Usaha",
-    text: "Testimoni asli akan kami tampilkan setelah project pertama selesai dikerjakan.",
+    name: "Fathul Alam",
+    initials: "FA",
+    status: "Testimoni akan segera hadir",
+    text: "Website sedang dalam proses penyelesaian. Testimoni akan ditampilkan setelah proyek selesai.",
   },
   {
-    name: "Nama Klien",
-    role: "Pengantin Baru",
-    text: "Testimoni asli akan kami tampilkan setelah project pertama selesai dikerjakan.",
+    name: "Yanti",
+    initials: "Y",
+    status: "Testimoni akan segera hadir",
+    text: "Masukan dan pengalaman klien akan kami tampilkan setelah layanan selesai diberikan.",
+  },
+  {
+    name: "Abdul Drajat",
+    initials: "AD",
+    status: "Testimoni akan segera hadir",
+    text: "Bern Labs berkomitmen memberikan hasil terbaik. Testimoni asli akan ditambahkan setelah klien memberikan ulasan.",
   },
 ];
 
@@ -32,34 +39,34 @@ export default function Testimonials() {
           </div>
         </ScrollReveal>
 
-        <div className="grid md:grid-cols-2 gap-5">
+        <div className="grid md:grid-cols-3 gap-5">
           {testimonials.map((t, i) => (
             <ScrollReveal key={i} delay={i * 0.08} duration={0.5}>
-              <div className="group p-6 md:p-8 rounded-2xl border border-white/[0.06] bg-surface/30 hover:bg-surface/50 hover:border-white/[0.12] transition-all duration-500">
-                {/* Stars */}
-                <div className="flex gap-1 mb-4">
-                  {[...Array(5)].map((_, j) => (
-                    <Star key={j} className={`w-4 h-4 transition-all duration-300 ${
-                      j < 4 ? "text-white/30 group-hover:text-white/40" : "text-white/20"
-                    }`} />
-                  ))}
+              <div className="group relative p-6 md:p-8 rounded-2xl border border-white/[0.06] bg-surface/30 hover:bg-surface/50 hover:border-white/[0.12] transition-all duration-500">
+                {/* Badge "Segera Hadir" */}
+                <div className="absolute top-4 right-4">
+                  <span className="inline-block px-3 py-1 text-[10px] font-medium uppercase tracking-[0.12em] rounded-full border border-amber-500/30 bg-amber-500/10 text-amber-400/80">
+                    Segera Hadir
+                  </span>
                 </div>
 
-                <p className="text-sm text-paragraph leading-relaxed mb-6 italic">
-                  &ldquo;{t.text}&rdquo;
-                </p>
-
-                <div className="flex items-center gap-3">
-                  <div className="w-10 h-10 rounded-full bg-white/5 border border-white/10 flex items-center justify-center group-hover:bg-white/10 transition-colors duration-300">
-                    <span className="text-xs font-heading font-medium text-white/40">
-                      {t.name.charAt(0)}
+                {/* Avatar — lingkaran dengan inisial */}
+                <div className="flex items-center gap-3 mb-5">
+                  <div className="w-12 h-12 rounded-full bg-white/5 border border-white/10 flex items-center justify-center shrink-0">
+                    <span className="text-sm font-heading font-semibold text-white/50">
+                      {t.initials}
                     </span>
                   </div>
                   <div>
                     <p className="text-sm font-medium text-white">{t.name}</p>
-                    <p className="text-xs text-paragraph/60">{t.role}</p>
+                    <p className="text-xs text-paragraph/50">{t.status}</p>
                   </div>
                 </div>
+
+                {/* Isi testimoni — placeholder */}
+                <p className="text-sm text-paragraph leading-relaxed italic">
+                  &ldquo;{t.text}&rdquo;
+                </p>
               </div>
             </ScrollReveal>
           ))}
