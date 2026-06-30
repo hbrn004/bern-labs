@@ -1,0 +1,6 @@
+# Bern Labs
+User-agent: *
+Allow: /
+
+# Sitemap
+Sitemap: https://bernlabs.com/sitemap.xml
