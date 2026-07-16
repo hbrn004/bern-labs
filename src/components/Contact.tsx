@@ -117,6 +117,31 @@ export default function Contact() {
                   </div>
                 </a>
               </div>
+
+              {/* Founder Bern Labs */}
+              <div className="mt-8 pt-6 border-t border-white/[0.06]">
+                <span className="text-[10px] font-medium text-white/30 uppercase tracking-[0.15em] mb-3 block">
+                  Founder Bern Labs
+                </span>
+                <a
+                  href="https://www.instagram.com/hybern_04"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="flex items-center gap-3 p-3 rounded-xl border border-white/[0.04] bg-white/[0.02] hover:bg-white/[0.04] hover:border-white/[0.08] transition-all duration-300 group"
+                >
+                  <div className="w-8 h-8 rounded-lg bg-white/[0.03] border border-white/[0.06] flex items-center justify-center group-hover:bg-white/[0.06] group-hover:scale-105 transition-all duration-300">
+                    <svg className="w-3.5 h-3.5 text-white/40 group-hover:text-white/60 transition-colors" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2"><rect x="2" y="2" width="20" height="20" rx="5"/><circle cx="12" cy="12" r="5"/><circle cx="18" cy="6" r="1"/></svg>
+                  </div>
+                  <div className="flex items-center gap-2">
+                    <div>
+                      <p className="text-[11px] text-paragraph/50">@hybern_04</p>
+                    </div>
+                    <span className="text-[9px] px-1.5 py-0.5 rounded-full bg-white/[0.04] text-white/30 font-medium uppercase tracking-[0.1em]">
+                      Founder
+                    </span>
+                  </div>
+                </a>
+              </div>
             </div>
           </ScrollReveal>
 

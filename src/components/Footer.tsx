@@ -97,6 +97,22 @@ export default function Footer() {
                 </a>
               ))}
             </div>
+
+            {/* Founder Bern Labs */}
+            <div className="mt-6 pt-4 border-t border-white/[0.04]">
+              <p className="text-[10px] text-white/25 uppercase tracking-[0.12em] mb-2.5">
+                Founder
+              </p>
+              <a
+                href="https://www.instagram.com/hybern_04"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="flex items-center gap-2 text-xs text-paragraph/50 hover:text-white/70 transition-all duration-300 group"
+              >
+                <svg className="w-3.5 h-3.5 group-hover:text-white/50 transition-colors" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2"><rect x="2" y="2" width="20" height="20" rx="5"/><circle cx="12" cy="12" r="5"/><circle cx="18" cy="6" r="1"/></svg>
+                <span>@hybern_04</span>
+              </a>
+            </div>
           </div>
         </div>
 
