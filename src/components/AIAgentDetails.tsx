@@ -79,7 +79,7 @@ export default function AIAgentDetails() {
             </p>
             <p className="mt-2 text-xs text-paragraph/80 leading-relaxed">
               Biaya API akan mengikuti penggunaan (pay-as-you-go) atau dimasukkan ke
-              dalam paket bulanan sesuai kesepakatan.
+              dalam biaya langganan bulanan sesuai kesepakatan.
             </p>
           </div>
 

@@ -20,11 +20,11 @@ const faqs = [
   },
   {
     q: "Apakah saya bisa meminta revisi?",
-    a: "Setiap paket sudah termasuk revisi. Jumlah revisi tergantung paket yang dipilih. Kami akan terus merevisi hingga Anda puas dengan hasilnya.",
+    a: "Setiap layanan sudah termasuk revisi. Jumlah revisi tergantung layanan yang dipilih. Kami akan terus merevisi hingga Anda puas dengan hasilnya.",
   },
   {
     q: "Apakah domain dan hosting sudah termasuk?",
-    a: "Untuk paket Website UMKM, domain dan hosting 1 tahun sudah termasuk. Untuk paket lain, bisa didiskusikan lebih lanjut sesuai kebutuhan.",
+    a: "Untuk layanan Website UMKM, domain dan hosting 1 tahun sudah termasuk. Untuk layanan lain, bisa didiskusikan lebih lanjut sesuai kebutuhan.",
   },
   {
     q: "Bagaimana cara memesan layanan?",
