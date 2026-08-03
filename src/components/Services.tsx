@@ -2,6 +2,7 @@
 
 import { Globe, Bot, Briefcase, Megaphone, FileText, Check, ChevronDown } from "lucide-react";
 import ScrollReveal from "./ScrollReveal";
+import AIAgentDetails from "./AIAgentDetails";
 
 interface ServiceItem {
   label: string;
@@ -9,6 +10,7 @@ interface ServiceItem {
   period?: string;
   tags?: string[];
   expandable?: boolean;
+  aiDetails?: boolean;
 }
 
 interface ServiceCategory {
@@ -63,7 +65,12 @@ const services: ServiceCategory[] = [
       { label: "AI Customer Service WhatsApp", price: "Rp1.500.000 – Rp3.000.000" },
       { label: "AI FAQ Bisnis", price: "Rp750.000 – Rp1.500.000" },
       { label: "Form & Data Automation", price: "Rp1.000.000 – Rp2.000.000" },
-      { label: "AI Agent untuk Operasional Bisnis", price: "Rp5.000.000 – Rp10.000.000" },
+      {
+        label: "AI Agent untuk Operasional Bisnis",
+        price: "Rp5.000.000 – Rp50.000.000+",
+        expandable: true,
+        aiDetails: true,
+      },
     ],
   },
   {
@@ -118,7 +125,11 @@ function PriceChip({ item }: { item: ServiceItem }) {
 function ServiceItemRow({ item }: { item: ServiceItem }) {
   if (item.expandable) {
     return (
-      <li className="py-2.5 border-b border-white/[0.03] last:border-0">
+      <li
+        className={`py-2.5 border-b border-white/[0.03] last:border-0 ${
+          item.aiDetails ? "sm:col-span-2" : ""
+        }`}
+      >
         <details className="group/acc">
           <summary className="flex items-center gap-2 cursor-pointer list-none select-none [&::-webkit-details-marker]:hidden">
             <span className="w-4 h-4 shrink-0 rounded-full bg-white/[0.04] border border-white/[0.08] flex items-center justify-center group-hover:border-white/[0.14] transition-colors duration-300">
@@ -147,6 +158,7 @@ function ServiceItemRow({ item }: { item: ServiceItem }) {
                 ))}
               </div>
             )}
+            {item.aiDetails && <AIAgentDetails />}
           </div>
         </details>
       </li>
