@@ -33,7 +33,7 @@ export default function AIAgentDetails() {
         <div className="rounded-xl border border-white/[0.06] bg-white/[0.02] p-4 md:p-5">
           <BlockHeader icon={Rocket} label="Harga Setup Awal" />
           <p className="text-lg font-semibold text-white tabular-nums tracking-tight">
-            Rp5.000.000 – Rp50.000.000+
+            Rp5.000.000 – Rp10.000.000
           </p>
           <p className="mt-2.5 text-xs text-paragraph/60 leading-relaxed border-l border-white/[0.08] pl-3">
             Harga disesuaikan dengan kebutuhan, kompleksitas sistem, jumlah fitur,

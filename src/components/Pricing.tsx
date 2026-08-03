@@ -8,7 +8,7 @@ const services = [
     icon: Globe,
     title: "Website UMKM",
     pricePrefix: "Mulai dari",
-    price: "Rp200.000 - Rp300.000",
+    price: "Rp250.000 – Rp500.000",
     popular: true,
     note: "Harga menyesuaikan jumlah halaman dan fitur.",
     features: [
@@ -23,7 +23,7 @@ const services = [
     icon: Diamond,
     title: "Website Undangan Digital",
     pricePrefix: "",
-    price: "Rp75.000 - Rp150.000",
+    price: "Rp75.000 – Rp250.000",
     popular: false,
     note: "Harga menyesuaikan template dan fitur.",
     features: [
@@ -39,7 +39,7 @@ const services = [
     icon: FileText,
     title: "CV Profesional",
     pricePrefix: "",
-    price: "Rp50.000 - Rp100.000",
+    price: "Rp25.000 – Rp50.000",
     popular: false,
     note: "Menyesuaikan desain dan kebutuhan.",
     features: [
@@ -55,7 +55,7 @@ const services = [
     icon: FileBadge,
     title: "Proposal Bisnis",
     pricePrefix: "",
-    price: "Rp50.000 - Rp150.000",
+    price: "Rp75.000 – Rp150.000",
     popular: false,
     note: "Harga menyesuaikan tingkat kompleksitas dan kebutuhan dokumen.",
     features: [

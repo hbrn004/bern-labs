@@ -86,7 +86,7 @@ export const metadata: Metadata = {
         streetAddress: "Prapatan Desa Pengauban, Kecamatan Lelea",
       },
       areaServed: "ID",
-      priceRange: "Rp50.000 - Rp750.000",
+      priceRange: "Rp25.000 - Rp10.000.000",
       sameAs: [
         "https://instagram.com/bern_labs",
         "https://tiktok.com/@bern_labs",

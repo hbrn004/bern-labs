@@ -67,7 +67,7 @@ const services: ServiceCategory[] = [
       { label: "Form & Data Automation", price: "Rp1.000.000 – Rp2.000.000" },
       {
         label: "AI Agent untuk Operasional Bisnis",
-        price: "Rp5.000.000 – Rp50.000.000+",
+        price: "Rp5.000.000 – Rp10.000.000",
         expandable: true,
         aiDetails: true,
       },
