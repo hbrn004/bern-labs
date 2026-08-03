@@ -139,7 +139,7 @@ export default function Hero() {
                 height={16}
                 className="w-4 h-4 object-contain"
               />
-              Solusi Digital untuk UMKM & Personal
+              Semua Kebutuhan Digital Anda
             </span>
           </motion.div>
 
