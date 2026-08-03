@@ -96,9 +96,10 @@ export default function Pricing() {
               duration={0.5}
               direction="up"
               distance={30}
+              className="h-full"
             >
               <div
-                className={`group relative p-6 rounded-2xl border transition-all duration-500 ${
+                className={`group relative pt-6 px-6 pb-5 h-full flex flex-col rounded-2xl border transition-all duration-500 ${
                   pkg.popular
                     ? "border-white/20 bg-white/[0.03] shadow-[0_0_40px_rgba(255,255,255,0.05)] scale-[1.02] lg:scale-105"
                     : "border-white/[0.06] bg-surface/70 hover:bg-surface hover:border-white/[0.12]"
@@ -148,7 +149,7 @@ export default function Pricing() {
                     {pkg.note}
                   </p>
 
-                  <ul className="space-y-2.5 mb-6">
+                  <ul className="space-y-2.5 flex-1 mb-0">
                     {pkg.features.map((f, j) => (
                       <li key={j} className="flex items-start gap-2.5 text-xs text-paragraph">
                         <Check className={`w-3.5 h-3.5 mt-0.5 shrink-0 ${
@@ -158,18 +159,6 @@ export default function Pricing() {
                       </li>
                     ))}
                   </ul>
-                  <a
-                    href={`https://wa.me/6283154701592?text=Halo%20Bern%20Labs%2C%20saya%20tertarik%20dengan%20paket%20${encodeURIComponent(pkg.title)}`}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className={`inline-flex items-center justify-center w-full h-10 text-xs font-medium rounded-full transition-all duration-300 hover:scale-[1.02] active:scale-[0.98] ${
-                      pkg.popular
-                        ? "text-black bg-white hover:bg-white/90"
-                        : "text-black bg-white hover:bg-white/90"
-                    }`}
-                  >
-                    Pilih Paket
-                  </a>
                 </div>
               </div>
             </ScrollReveal>

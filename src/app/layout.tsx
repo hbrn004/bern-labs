@@ -21,6 +21,7 @@ const spaceGrotesk = Space_Grotesk({
 });
 
 export const metadata: Metadata = {
+  metadataBase: new URL("https://bernlabs.com"),
   title: "Bern Labs — Jasa Pembuatan Website Indramayu & Undangan Digital",
   description:
     "Bern Labs — studio digital Indramayu. Jasa pembuatan website UMKM, undangan digital, CV profesional, dan proposal bisnis. Harga terjangkau, kualitas premium.",
