@@ -1,71 +1,66 @@
 "use client";
 
-import { Globe, Diamond, FileText, FileBadge, Check, Star } from "lucide-react";
+import { Globe, Briefcase, FileText, Bot, Check, Star } from "lucide-react";
 import ScrollReveal from "./ScrollReveal";
 
 const services = [
   {
     icon: Globe,
-    title: "Website UMKM",
-    pricePrefix: "Mulai dari",
-    price: "Rp250.000 – Rp500.000",
+    title: "Website",
+    pricePrefix: "",
+    price: "Rp150.000 – Rp2.000.000",
     popular: true,
-    note: "Harga menyesuaikan jumlah halaman dan fitur.",
+    description:
+      "Website profesional untuk UMKM, perusahaan, sekolah, komunitas, toko online, landing page, hingga website undangan digital.",
     features: [
-      "Desain modern & responsif",
-      "Hingga 5 halaman",
-      "SEO dasar",
-      "Form kontak",
-      "Gratis revisi 2x",
+      "Website UMKM",
+      "Company Profile",
+      "Landing Page",
+      "Toko Online",
+      "Website Sekolah / Komunitas",
+      "Website Undangan & Acara Digital",
     ],
   },
   {
-    icon: Diamond,
-    title: "Website Undangan Digital",
+    icon: Briefcase,
+    title: "Software Bisnis",
     pricePrefix: "",
-    price: "Rp75.000 – Rp250.000",
+    price: "Rp1.000.000 – Rp5.000.000",
     popular: false,
-    note: "Harga menyesuaikan template dan fitur.",
+    description:
+      "Software yang dirancang untuk membantu operasional bisnis menjadi lebih cepat, rapi, dan efisien.",
     features: [
-      "Desain elegan & modern",
-      "Galeri foto",
-      "Informasi acara lengkap",
-      "RSVP online",
-      "Google Maps lokasi",
-      "Gratis revisi 3x",
+      "Sistem Kasir (POS)",
+      "Sistem Inventori",
+      "Dashboard Penjualan",
+      "CRM Sederhana",
+      "Sistem Booking / Reservasi",
     ],
   },
   {
     icon: FileText,
-    title: "CV Profesional",
+    title: "Dokumen Profesional",
     pricePrefix: "",
-    price: "Rp25.000 – Rp50.000",
+    price: "Rp25.000 – Rp300.000",
     popular: false,
-    note: "Menyesuaikan desain dan kebutuhan.",
+    description:
+      "Dokumen profesional untuk kebutuhan bisnis maupun personal.",
     features: [
-      "Desain ramah ATS",
-      "Format PDF & DOCX",
-      "Infografis pengalaman",
-      "Link portofolio",
-      "QR Code terintegrasi",
-      "Gratis revisi 2x",
+      "CV ATS Friendly",
+      "Proposal Bisnis",
+      "Company Profile PDF",
+      "Portofolio Profesional",
     ],
   },
   {
-    icon: FileBadge,
-    title: "Proposal Bisnis",
-    pricePrefix: "",
-    price: "Rp75.000 – Rp150.000",
+    icon: Bot,
+    title: "AI & Automation",
+    pricePrefix: "Mulai dari",
+    price: "Rp750.000",
     popular: false,
-    note: "Harga menyesuaikan tingkat kompleksitas dan kebutuhan dokumen.",
-    features: [
-      "Desain korporat profesional",
-      "10-15 halaman",
-      "Grafik & infografis",
-      "Analisis kompetitor",
-      "Proyeksi keuangan",
-      "Gratis revisi 2x",
-    ],
+    description:
+      "Otomatisasi berbasis AI untuk meningkatkan pelayanan pelanggan dan efisiensi operasional bisnis.",
+    features: ["AI Chatbot"],
   },
 ];
 
@@ -145,9 +140,9 @@ export default function Pricing() {
                     </p>
                   </div>
 
-                  {/* Note */}
-                  <p className="text-[10px] text-paragraph/50 mb-5 leading-relaxed">
-                    {svc.note}
+                  {/* Deskripsi */}
+                  <p className="text-xs text-paragraph/60 leading-relaxed mb-5">
+                    {svc.description}
                   </p>
 
                   <ul className="space-y-2.5 flex-1 mb-0">
