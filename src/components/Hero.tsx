@@ -5,12 +5,12 @@ import { motion, useScroll, useTransform, useSpring } from "framer-motion";
 import Image from "next/image";
 
 const headlineWords = [
-  { text: "Membangun", className: "" },
-  { text: "Website", className: "" },
-  { text: "yang", className: "" },
-  { text: "Membantu", className: "" },
-  { text: "Bisnis", className: "" },
-  { text: "Bertumbuh", className: "text-white" },
+  { text: "Semua", className: "" },
+  { text: "Solusi", className: "" },
+  { text: "Digital,", className: "" },
+  { text: "Dalam", className: "" },
+  { text: "Satu", className: "text-white" },
+  { text: "Tempat.", className: "text-white" },
 ];
 
 export default function Hero() {
@@ -170,8 +170,10 @@ export default function Hero() {
             transition={{ duration: 0.6, delay: 0.9 }}
             className="text-base md:text-lg text-paragraph max-w-2xl leading-relaxed mb-10"
           >
-            Dari website UMKM, undangan digital, CV, hingga proposal bisnis —
-            kami bantu Anda tampil profesional dan lebih dikenal.
+            Website, AI Automation, Software Bisnis, Digital Marketing, hingga
+            Dokumen Profesional — semua dirancang untuk membantu bisnis Anda
+            tumbuh lebih cepat, tampil lebih profesional, dan semakin dipercaya
+            pelanggan.
           </motion.p>
 
           {/* CTA Buttons */}
