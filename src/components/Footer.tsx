@@ -117,18 +117,10 @@ export default function Footer() {
         </div>
 
         {/* Bottom */}
-        <div className="mt-10 pt-8 border-t border-white/[0.04] flex flex-col sm:flex-row items-center justify-between gap-4">
+        <div className="mt-10 pt-8 border-t border-white/[0.04] flex flex-col items-center justify-center gap-4">
           <p className="text-[11px] text-paragraph/40">
             &copy; {new Date().getFullYear()} Bern Labs. All rights reserved.
           </p>
-          <a
-            href="https://maps.google.com/?q=Prapatan+Desa+Pengauban+Kecamatan+Lelea+Indramayu+Jawa+Barat"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="text-[11px] text-paragraph/40 hover:text-white transition-colors"
-          >
-            Buka di Google Maps
-          </a>
         </div>
       </div>
     </footer>
